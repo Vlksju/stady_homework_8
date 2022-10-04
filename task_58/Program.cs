@@ -48,7 +48,7 @@ Console.WriteLine();
 
 int[,] arrayResult = new int[arrayOne.GetLength(0),arrayTwo.GetLength(1)];
 
-for (int i = 0; i < arrayOne.GetLength(0); i++)
+for (int i = 0; i < arrayOne.GetLength(1); i++)
 {
     for (int j = 0; j < arrayTwo.GetLength(1); j++)
         {

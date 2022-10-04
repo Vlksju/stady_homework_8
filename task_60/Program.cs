@@ -1,6 +1,6 @@
-﻿Console.WriteLine("Программа, которая элементы трехмерного массива вместе с их индексами");
+﻿Console.WriteLine("Программа, которая выводит элементы трехмерного массива вместе с их индексами");
 
-int[,,] FillRandomDoubleArray(int lines = 2, int columns = 2, int volume = 2, int leftRange = 10, int rethRange = 98)
+int[,,] FillRandomDoubleArray(int lines = 2, int columns = 2, int volume = 2, int leftRange = 0, int rethRange = 98)
 {
     int[,,] randomArray = new int[lines, columns, volume];
     Random rand = new Random();
@@ -24,12 +24,12 @@ void PrintMatrix(int[,,] matrix)
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
             for (int k = 0; k < matrix.GetLength(2); k++)
+
                 Console.Write(matrix[i, j, k] + " " + "(" + i + "," + j + "," + k + ") ");
         }
         Console.WriteLine();
     }
 }
-
 
 int[,,] arrayOne = FillRandomDoubleArray();
 
